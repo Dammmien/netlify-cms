@@ -98,7 +98,7 @@ class UnpublishedListing extends React.Component {
                         <Button>Edit</Button>
                       </Link>
                       <Button
-                      onClick={this.requestDelete.bind(this, collection, slug, ownStatus)}>
+                        onClick={this.requestDelete.bind(this, collection, slug, ownStatus)}>
                         Delete
                       </Button>
                       {

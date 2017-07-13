@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { EDITORIAL_WORKFLOW } from '../../constants/publishModes';
 import { selectUnpublishedEntry, selectEntry } from '../../reducers';
-import { loadUnpublishedEntry, persistUnpublishedEntry } from '../../actions/editorialWorkflow';
+import { loadUnpublishedEntry, persistUnpublishedEntry, deleteUnpublishedEntry } from '../../actions/editorialWorkflow';
 
 
 export default function EntryPageHOC(EntryPage) {

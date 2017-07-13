@@ -14,6 +14,7 @@ import {
   UNPUBLISHED_ENTRY_PERSIST_REQUEST,
   UNPUBLISHED_ENTRY_PERSIST_SUCCESS,
   UNPUBLISHED_ENTRY_PERSIST_FAILURE,
+  UNPUBLISHED_ENTRY_PUBLISH_SUCCESS,
 } from '../actions/editorialWorkflow';
 import {
   ADD_ASSET,
@@ -79,6 +80,7 @@ const entryDraftReducer = (state = Map(), action) => {
     case ENTRY_PERSIST_SUCCESS:
     case ENTRY_DELETE_SUCCESS:
     case UNPUBLISHED_ENTRY_PERSIST_SUCCESS:
+    case UNPUBLISHED_ENTRY_PUBLISH_SUCCESS:
       return state.withMutations((state) => {
         state.deleteIn(['entry', 'isPersisting']);
         state.set('hasChanged', false);
